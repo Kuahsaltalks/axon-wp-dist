@@ -1,0 +1,10 @@
+{
+  "name": "Axon",
+  "slug": "axon-wp",
+  "version": "0.0.0",
+  "download_url": "",
+  "requires": "6.4",
+  "tested": "7.0",
+  "requires_php": "8.0",
+  "sections": { "description": "Placeholder until the first release is published." }
+}
