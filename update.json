@@ -1,10 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "0.0.0",
-  "download_url": "",
-  "requires": "6.4",
+  "version": "2.0.1",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.1/axon-wp-2.0.1.zip",
+  "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
-  "sections": { "description": "Placeholder until the first release is published." }
+  "author": "<a href=\"https://waah.school\">Waah School</a>",
+  "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
+  "last_updated": "2026-08-19 06:13:43",
+  "sections": {
+    "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
+    "changelog": "<h4>2.0.1</h4><p>Fixes a false 'Endpoint: no server registered' warning on the setup screen. The MCP server registers itself lazily on the first REST request, so the admin page saw an empty registry and wrongly reported a healthy site as broken. The endpoint is now verified over HTTP, and a check that cannot run shows amber rather than red.</p>"
+  }
 }
