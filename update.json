@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.0.1",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.1/axon-wp-2.0.1.zip",
+  "version": "2.0.2",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.2/axon-wp-2.0.2.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-19 06:13:43",
+  "last_updated": "2026-08-19 06:22:07",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.0.1</h4><p>Fixes a false 'Endpoint: no server registered' warning on the setup screen. The MCP server registers itself lazily on the first REST request, so the admin page saw an empty registry and wrongly reported a healthy site as broken. The endpoint is now verified over HTTP, and a check that cannot run shows amber rather than red.</p>"
+    "changelog": "<h4>2.0.2</h4><p>Fixes llms.txt generation on page-builder sites. Descriptions were being scraped from the navigation menu and breadcrumb trails instead of real page content, which would have told AI models that every page was about the site menu. Now prefers the Rank Math or Yoast meta description, then the excerpt, and only falls back to page content after stripping breadcrumbs and rejecting run-together menu text. Also excludes noindex pages from the file and decodes HTML entities in titles.</p>"
   }
 }
