@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.0.2",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.2/axon-wp-2.0.2.zip",
+  "version": "2.0.3",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.3/axon-wp-2.0.3.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-19 06:22:07",
+  "last_updated": "2026-08-19 06:27:19",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.0.2</h4><p>Fixes llms.txt generation on page-builder sites. Descriptions were being scraped from the navigation menu and breadcrumb trails instead of real page content, which would have told AI models that every page was about the site menu. Now prefers the Rank Math or Yoast meta description, then the excerpt, and only falls back to page content after stripping breadcrumbs and rejecting run-together menu text. Also excludes noindex pages from the file and decodes HTML entities in titles.</p>"
+    "changelog": "<h4>2.0.3</h4><p>Completes the llms.txt cleanup started in 2.0.2. Breadcrumb separators are stored as HTML entities, and 2.0.2 stripped them before decoding, so every breadcrumb survived on posts without a meta description. Text is now decoded first, the repeated post title and category label are removed whether the theme truncates the title or prints it in full, and a bare '>' is no longer treated as a breadcrumb separator because it mangled legitimate prose such as '5 > 3'.</p>"
   }
 }
