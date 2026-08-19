@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.0.6",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.6/axon-wp-2.0.6.zip",
+  "version": "2.1.0",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.1.0/axon-wp-2.1.0.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-19 06:43:59",
+  "last_updated": "2026-08-19 06:50:41",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.0.6</h4><p>Fixes \/llms.txt being served with a 404 status. WordPress resolves the path to a 404 before the plugin outputs the file, so the correct content was returned under a 'does not exist' status line and every AI crawler discarded it. Now sends an explicit 200 with Content-Length and a cache header, handles HEAD requests, and no longer sends X-Robots-Tag: noindex, which was the wrong instruction for a file that exists to be read by AI crawlers.</p>"
+    "changelog": "<h4>2.1.0</h4><p>Full audit pass. Update reliability: the manifest cache now follows WordPress's own check cycle, so a release is picked up the moment core re-checks instead of waiting out an invisible private timer; cache lifetime cut from 6 hours to 1, and a failed lookup is retried after 5 minutes instead of an hour. Output correctness: HTML entities are now decoded across every tool, not just llms.txt, so titles no longer arrive as 'Fees &#038; Scholarships' and Schema.org names no longer carry markup into Google's rich results. Includes the 2.0.6 fix serving \/llms.txt with a 200 status instead of 404.</p>"
   }
 }
