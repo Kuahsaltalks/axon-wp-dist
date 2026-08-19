@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.0.4",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.4/axon-wp-2.0.4.zip",
+  "version": "2.0.5",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.0.5/axon-wp-2.0.5.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-19 06:31:04",
+  "last_updated": "2026-08-19 06:35:47",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.0.4</h4><p>Fixes updates appearing to be unavailable when they exist. The plugin caches its update manifest for six hours, and only its own 'Check for updates' link cleared that cache \u2014 so WordPress's native 'Check again' reported the site as current for up to six hours after a release. A forced WordPress update check now bypasses the cache. This is why 2.0.3 did not reach sites that used the standard WordPress update workflow.</p>"
+    "changelog": "<h4>2.0.5</h4><p>Removes the theme byline tail from llms.txt descriptions on posts without a meta description. Themes print an author, date and reading time immediately after the excerpt and follow it with the nav menu, so descriptions ended with 'By Author-19 Jul 2026-5 min read HOME WHY...'. Cuts at the byline, bullet-separated post meta, or a trailing 'N min read', while leaving prose that legitimately contains an ellipsis or the word 'By' untouched.</p>"
   }
 }
