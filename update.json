@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.1.0",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.1.0/axon-wp-2.1.0.zip",
+  "version": "2.1.1",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.1.1/axon-wp-2.1.1.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-19 06:50:41",
+  "last_updated": "2026-08-19 06:57:27",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.1.0</h4><p>Full audit pass. Update reliability: the manifest cache now follows WordPress's own check cycle, so a release is picked up the moment core re-checks instead of waiting out an invisible private timer; cache lifetime cut from 6 hours to 1, and a failed lookup is retried after 5 minutes instead of an hour. Output correctness: HTML entities are now decoded across every tool, not just llms.txt, so titles no longer arrive as 'Fees &#038; Scholarships' and Schema.org names no longer carry markup into Google's rich results. Includes the 2.0.6 fix serving \/llms.txt with a 200 status instead of 404.</p>"
+    "changelog": "<h4>2.1.1</h4><p>Prevents FAQPage schema being generated from calls to action and site footers. A heading ending in a question mark was treated as an FAQ, so promotional prompts such as 'Not sure which programme fits you?' were marked up as questions, and because an answer runs to the next heading the final question absorbed the page footer as its answer. Google treats promotional FAQPage markup as structured data spam and can issue a manual action for it. Questions must now open with an interrogative, and the footer is removed before extraction.</p>"
   }
 }
