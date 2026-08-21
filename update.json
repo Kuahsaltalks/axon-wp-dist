@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.2.1",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.2.1/axon-wp-2.2.1.zip",
+  "version": "2.3.0",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.3.0/axon-wp-2.3.0.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-21 06:32:29",
+  "last_updated": "2026-08-21 06:47:13",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.2.1</h4><p>Fixes SEO meta being written to the wrong plugin. set_seo_meta wrote Yoast's meta keys unconditionally, so on a Rank Math site every write was a silent no-op: the tool reported success while Rank Math went on showing 'Keyword: Not Set', because the two plugins use entirely different post meta keys and neither reads the other's. The tool now detects which SEO plugin the site runs and writes that plugin's keys, and reads back from whichever holds a value. This removes the need for browser automation to set focus keywords and meta descriptions after publishing.</p>"
+    "changelog": "<h4>2.3.0</h4><p>Adds coded page design, with no page builder. design_page writes HTML and CSS straight into a page: the markup lives in post_content so it stays editable and revisionable in wp-admin, and the CSS is printed on that page only so it can never leak site-wide. Mode 'full' renders a blank canvas with no theme header or footer for landing pages, while 'themed' sits inside the theme. wp_head and wp_footer still run on the canvas, so Rank Math meta, JSON-LD and analytics keep working. get_design reads a page back so edits are made against what is really there. analyze_design studies a reference URL and reports its structure, colour palette, typography and layout patterns to inform an original build, without copying text, images or markup. Guardrails refuse a full HTML document, a duplicate h1, or an inline style block, each with an explanation. Replaces the earlier hardcoded single-slug landing template with a general system any page can use.</p>"
   }
 }
