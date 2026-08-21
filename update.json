@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.2.0",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.2.0/axon-wp-2.2.0.zip",
+  "version": "2.2.1",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.2.1/axon-wp-2.2.1.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-21 06:20:08",
+  "last_updated": "2026-08-21 06:32:29",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.2.0</h4><p>Adds full site control. Until now Axon could audit and optimise a site but not build one: it could change a post's status but never create a post, and could set alt text but never upload an image. New tools: create_post, update_post, get_post, list_posts, delete_post, manage_terms, upload_media, and wp_rest. Partial updates only change the fields passed, so editing a title cannot blank an excerpt. Deletion trashes by default and permanent removal needs an explicit flag. upload_media accepts a URL or base64 and enforces WordPress's own allowed file types. wp_rest reaches any REST route through WordPress's own dispatcher, so every route's permission check still applies and the tool can never exceed the connected account \u2014 it refuses only to set user passwords. Editing post content on an Elementor page now warns that the builder renders from its own data.</p>"
+    "changelog": "<h4>2.2.1</h4><p>Fixes SEO meta being written to the wrong plugin. set_seo_meta wrote Yoast's meta keys unconditionally, so on a Rank Math site every write was a silent no-op: the tool reported success while Rank Math went on showing 'Keyword: Not Set', because the two plugins use entirely different post meta keys and neither reads the other's. The tool now detects which SEO plugin the site runs and writes that plugin's keys, and reads back from whichever holds a value. This removes the need for browser automation to set focus keywords and meta descriptions after publishing.</p>"
   }
 }
