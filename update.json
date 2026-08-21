@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.1.1",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.1.1/axon-wp-2.1.1.zip",
+  "version": "2.2.0",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.2.0/axon-wp-2.2.0.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-19 06:57:27",
+  "last_updated": "2026-08-21 06:20:08",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.1.1</h4><p>Prevents FAQPage schema being generated from calls to action and site footers. A heading ending in a question mark was treated as an FAQ, so promotional prompts such as 'Not sure which programme fits you?' were marked up as questions, and because an answer runs to the next heading the final question absorbed the page footer as its answer. Google treats promotional FAQPage markup as structured data spam and can issue a manual action for it. Questions must now open with an interrogative, and the footer is removed before extraction.</p>"
+    "changelog": "<h4>2.2.0</h4><p>Adds full site control. Until now Axon could audit and optimise a site but not build one: it could change a post's status but never create a post, and could set alt text but never upload an image. New tools: create_post, update_post, get_post, list_posts, delete_post, manage_terms, upload_media, and wp_rest. Partial updates only change the fields passed, so editing a title cannot blank an excerpt. Deletion trashes by default and permanent removal needs an explicit flag. upload_media accepts a URL or base64 and enforces WordPress's own allowed file types. wp_rest reaches any REST route through WordPress's own dispatcher, so every route's permission check still applies and the tool can never exceed the connected account \u2014 it refuses only to set user passwords. Editing post content on an Elementor page now warns that the builder renders from its own data.</p>"
   }
 }
