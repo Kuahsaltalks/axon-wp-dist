@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.4.1",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.4.1/axon-wp-2.4.1.zip",
+  "version": "2.5.0",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.5.0/axon-wp-2.5.0.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-21 07:09:44",
+  "last_updated": "2026-08-21 07:16:07",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.4.1</h4><p>Makes a failed update check visible. When WordPress showed no update, there was nothing to look at: a genuinely current install and a site that could not reach the update server at all looked identical. The Axon screen now has a 'Why is my update not showing?' button that performs a live check, bypassing every cache, and reports the real result: whether the server is reachable, what version it advertises, when the last check happened, and on failure the actual HTTP or DNS error with what to do about it. Blocked outbound HTTPS, an intercepting proxy and a stale WordPress cache now each produce a different, specific message instead of silence.</p>"
+    "changelog": "<h4>2.5.0</h4><p>Exposes every Axon tool directly to MCP clients instead of routing them all through one generic wrapper. Previously a client saw three tools and had to pass an ability name plus a parameters object to execute-ability for every call. That indirection cost three round trips per action, and made every single tool depend on the parameters object surviving serialisation intact: a client that sent it as a string got 'parameters is not of type object' and EVERY tool failed at once, with nothing in the site's logs because the request never reached the ability. Observed live on a WordPress 7.1 site. Each tool now arrives with its own name, description and schema, which is what clients are built to consume. The three generic tools remain registered so anything already using them keeps working.</p>"
   }
 }
