@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.5.2",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.5.2/axon-wp-2.5.2.zip",
+  "version": "2.5.3",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.5.3/axon-wp-2.5.3.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-08-21 17:49:18",
+  "last_updated": "2026-09-14 18:12:31",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.5.2</h4><p>Fixes every tool disappearing on strict MCP clients. Two tools declared no parameters as an empty PHP array, which JSON-encodes to [] \u2014 but JSON Schema requires properties to be an object, {}. A strict client validates the entire tools\/list response, so those two malformed entries invalidated ALL 40 tools with 'expected record, received array', naming neither the plugin nor the tools at fault. claude.ai tolerated it; another client did not. Both definitions are fixed, and schemas are now normalised centrally at registration so a future zero-argument tool cannot reintroduce it by writing the natural thing. Verified: all 40 tools now emit a valid object for properties.</p>"
+    "changelog": "<h4>2.5.3</h4><p>Add Google Antigravity MCP direct integration & REST endpoints</p>"
   }
 }
