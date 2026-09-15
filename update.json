@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.5.4",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.5.4/axon-wp-2.5.4.zip",
+  "version": "2.5.5",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.5.5/axon-wp-2.5.5.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-09-15 03:10:27",
+  "last_updated": "2026-09-15 03:26:00",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.5.4</h4><p>Add Google Antigravity to Axon Admin Screen and MCP config</p>"
+    "changelog": "<h4>2.5.5</h4><p>Enhanced Google Antigravity MCP endpoint with update support, delete-post, and cache purging</p>"
   }
 }
