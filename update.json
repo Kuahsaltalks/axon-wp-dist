@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.6.1",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.6.1/axon-wp-2.6.1.zip",
+  "version": "2.6.2",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.6.2/axon-wp-2.6.2.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-09-17 08:10:29",
+  "last_updated": "2026-09-17 08:15:06",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.6.1</h4><p>Add client-side telemetry beacon for cache-bypassing AI referral tracking</p>"
+    "changelog": "<h4>2.6.2</h4><p>Add universal zero-code connection setup, auto-detection, and step-by-step onboarding guide for GA4 and Search Console</p>"
   }
 }
