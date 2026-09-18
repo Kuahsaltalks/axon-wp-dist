@@ -1,16 +1,16 @@
 {
   "name": "Axon",
   "slug": "axon-wp",
-  "version": "2.6.5",
-  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.6.5/axon-wp-2.6.5.zip",
+  "version": "2.6.6",
+  "download_url": "https://github.com/Kuahsaltalks/axon-wp-dist/releases/download/v2.6.6/axon-wp-2.6.6.zip",
   "requires": "6.9",
   "tested": "7.0",
   "requires_php": "8.0",
   "author": "<a href=\"https://waah.school\">Waah School</a>",
   "homepage": "https://github.com/Kuahsaltalks/axon-wp-dist",
-  "last_updated": "2026-09-17 09:46:50",
+  "last_updated": "2026-09-18 04:57:12",
   "sections": {
     "description": "One plugin that turns WordPress into an AI-controllable site: 24 MCP tools for SEO, speed, security, GEO/AEO, schema and redirects, plus a full OAuth 2.1 server so MCP clients connect with a click.",
-    "changelog": "<h4>2.6.5</h4><p>Add internal bypass flag and safe array handling to generate_llms_txt</p>"
+    "changelog": "<h4>2.6.6</h4><p>Add sitemap rewrite, security headers, meta description sanitizer, and self-update REST endpoint</p>"
   }
 }
